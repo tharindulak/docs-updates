@@ -1,0 +1,217 @@
+{
+  "docs": [
+    {
+      "type": "doc",
+      "id": "index",
+      "label": "Home"
+    },
+    {
+      "type": "category",
+      "label": "Updates",
+      "items": [
+        {
+          "type": "category",
+          "label": "Get Started",
+          "items": [
+            {
+              "type": "doc",
+              "id": "updates/overview",
+              "label": "Overview"
+            },
+            {
+              "type": "doc",
+              "id": "updates/new-user",
+              "label": "New to WSO2 Updates"
+            },
+            {
+              "type": "doc",
+              "id": "updates/set-up-update-tool",
+              "label": "Set Up the Update Tool"
+            },
+            {
+              "type": "doc",
+              "id": "updates/authentication",
+              "label": "Authentication"
+            },
+            {
+              "type": "doc",
+              "id": "updates/whats-new",
+              "label": "Whats new in WSO2 Updates"
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "How to Update",
+          "items": [
+            {
+              "type": "doc",
+              "id": "updates/update-tool",
+              "label": "Using the Update Tool"
+            },
+            {
+              "type": "doc",
+              "id": "updates/update-commands",
+              "label": "Useful Update Commands"
+            },
+            {
+              "type": "doc",
+              "id": "updates/changelog",
+              "label": "Changelog"
+            },
+            {
+              "type": "doc",
+              "id": "updates/resolve-conflicts",
+              "label": "Resolving Conflicts"
+            },
+            {
+              "type": "category",
+              "label": "Using Docker Images",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "updates/how-to-use-docker-images-to-receive-updates",
+                  "label": "Using Docker images to receive Updates"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/using-wso2-docker-images",
+                  "label": "Docker image tags with Updates 2.0"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/customized-dockerfile",
+                  "label": "Creating Custom Docker images"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Continuous Update",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "updates/continuous-update",
+                  "label": "Simple Setup"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/advance-continuous-update",
+                  "label": "Advance Setup"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "updates/hotfixes",
+          "label": "Hotfixes"
+        },
+        {
+          "type": "doc",
+          "id": "updates/updates-portal",
+          "label": "Updates Portal"
+        },
+        {
+          "type": "category",
+          "label": "Registry",
+          "items": [
+            {
+              "type": "category",
+              "label": "Registry User Guide",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "updates/customer-guide-harbor-registry",
+                  "label": "Overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/wso2-registry-web-portal",
+                  "label": "Accessing the Registry Web Portal"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/wso2-registry-cli-access",
+                  "label": "Accessing Images via CLI"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/wso2-registry-image-retention-policy",
+                  "label": "Image Retention Policy"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/wso2-registry-faq",
+                  "label": "FAQ"
+                }
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Registry Token Management",
+              "items": [
+                {
+                  "type": "doc",
+                  "id": "updates/registry-token-management",
+                  "label": "Overview"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/registry-token-management-customer",
+                  "label": "User Guide"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/registry-token-management-admin",
+                  "label": "Admin Guide"
+                },
+                {
+                  "type": "doc",
+                  "id": "updates/understanding-tokens",
+                  "label": "Understanding Tokens"
+                }
+              ]
+            },
+            {
+              "type": "doc",
+              "id": "updates/registry-image-verification",
+              "label": "Registry Image Verification"
+            }
+          ]
+        },
+        {
+          "type": "doc",
+          "id": "updates/best-practices",
+          "label": "Best Practices"
+        },
+        {
+          "type": "doc",
+          "id": "updates/update-tool-setup-usage-guide",
+          "label": "Update Tool Setup Usage Guide"
+        },
+        {
+          "type": "doc",
+          "id": "updates/troubleshoot",
+          "label": "Troubleshooting Guide"
+        },
+        {
+          "type": "doc",
+          "id": "updates/faq",
+          "label": "Frequently Asked Questions"
+        },
+        {
+          "type": "doc",
+          "id": "updates/wum-decommission",
+          "label": "WUM/In-place Decommission Plan"
+        },
+        {
+          "type": "doc",
+          "id": "updates/reference",
+          "label": "Reference Page"
+        }
+      ]
+    }
+  ]
+}
