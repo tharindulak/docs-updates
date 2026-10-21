@@ -43,7 +43,9 @@ In this example, we will assume that we are creating a custom Docker image for a
 <br />
 &emsp;&emsp;b. Add a COPY command before RUN to copy the created zip file into the image.
     
-    COPY wso2am-3.0.0.zip $\{WSO2_SERVER\}.zip
+```
+COPY wso2am-3.0.0.zip ${WSO2_SERVER}.zip
+```
 <br />
     8. Make the necessary additional custom changes to the Dockerfile.
 For example, if we need to change the JDK version from the current version of 8 to 11, we must make the following changes.<br />

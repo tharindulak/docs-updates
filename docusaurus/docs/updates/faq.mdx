@@ -3,8 +3,6 @@ title: Frequently Asked Questions
 deployment_options:
   - Self-hosted
 custom_edit_url: https://github.com/wso2/docs-updates/edit/master/en/docs/updates/faq.md
-mdx:
-  format: md
 ---
 
 ### Can I get WSO2 Updates for free?
@@ -97,9 +95,11 @@ You can check the changelog of an update by log into the [Updates Portal](https:
 Check whether you have given the correct WSO2 credentials. If you have, check whether your password has the $ sign. If 
 yes, escape the $ sign using escape character '\'. 
     
-        Example
-         Password - 123$abc
-         Should be entered as 123\$abc
+```
+    Example
+     Password - 123$abc
+     Should be entered as 123\$abc
+```
 
 ### Should I change configurations when a proxy server or firewall is running?
 
@@ -109,7 +109,9 @@ the Update service through a proxy server or firewall, whitelist the above-menti
 
 Since WSO2 Updates is a command-line tool, the proxy should be configured from your command-line using the following command:
 
-        export http_proxy=http://username:password@proxyhost:port/
+```
+    export http_proxy=http://username:password@proxyhost:port/
+```
         
 If you are behind an NTLM proxy, you can use a third party tool like CNTLM to do the NTLM proxy authentication. See 
 the [CNTLM documentation](http://cntlm.sourceforge.net/) for instructions.
@@ -130,19 +132,23 @@ WSO2 recommnds Ansible and Puppet.
 
 Ansible resources: 
 
-    WSO2 APIM: https://github.com/wso2/ansible-apim/blob/master/README.md
+```
+WSO2 APIM: https://github.com/wso2/ansible-apim/blob/master/README.md
 
-    WSO2 EI: https://github.com/wso2/ansible-ei/blob/master/README.md
+WSO2 EI: https://github.com/wso2/ansible-ei/blob/master/README.md
 
-    WSO2 IS: https://github.com/wso2/ansible-is/blob/master/README.md
+WSO2 IS: https://github.com/wso2/ansible-is/blob/master/README.md
+```
 
 Puppet resources:
 
-    WSO2 APIM: https://github.com/wso2/puppet-apim/blob/master/README.md
+```
+WSO2 APIM: https://github.com/wso2/puppet-apim/blob/master/README.md
 
-    WSO2 EI: https://github.com/wso2/puppet-ei/blob/master/README.md
+WSO2 EI: https://github.com/wso2/puppet-ei/blob/master/README.md
 
-    WSO2 IS: https://github.com/wso2/puppet-is/blob/master/README.md      
+WSO2 IS: https://github.com/wso2/puppet-is/blob/master/README.md      
+```
 
 ### How can I use update commands in automation scripts?
 
@@ -184,26 +190,8 @@ e.g., wso2am:3.2.0.3-spec1-alpine
 
 ### How can I get updates for each node (Dev, Staging and Production) when a deployment or server directory is shared among nodes? 
 You can get updates to nodes when there is a shared deployment or server directory. Below is a list of recommended ways to achieve this:<br />
-<ul>With the aid of a **Configuration Management Tool**:<br />
-<ol>
-    <li>Stop all running product packs.</li> 
-    <li>Unmount the shared directory from all nodes except the main node of your Configuration Management Tool. (If the shared directory is not mounted in the main node of the Config Management setup, you'll have to mount it to the main node).<br /></li>
-    <li>Execute the WSO2 update tool on the main node to update the product pack.<br /></li>
-    <li>Using you Configuration Management Tool, transfer the updated pack to the other nodes.<br />
-    <li>Mount the shared directory on other nodes. At this point, the update is successful on all the deployment node.<br />
-<ol>
-</ul>
-<ul>Without the aid of a **Configuration Management Tool**:<br />
-<ol>
-    <li>In the deployment, first stop all product packs.<br /></li>
-    <li>Unmount the shared directory (deployment/server) in all servers except in one server/instance.<br /></li>
-    <li>Run the WSO2 Update tool to update the product pack with the latest changes (jar, war, and webapp changes).<br /></li>
-    <li>If there are conflicts, take any necessary steps to manually resolve them. [Refer to the Resolve Conflicts page](../../updates/resolve-conflicts/)<br />
-    <li>This will apply all the updates sent for deployment/server directories from WSO2. <br /></li>
-    <li>Copy the updated pack to all other nodes replacing their existing product.<br /></li>
-    <li>Mount the shared directory in all nodes and start servers. Now the whole deployment is updated.</li>
-</ol>
-</ul>
+<ul>{"With the aid of a **Configuration Management Tool**:"}<br /><ol><li>{"Stop all running product packs."}</li><li>{"Unmount the shared directory from all nodes except the main node of your Configuration Management Tool. (If the shared directory is not mounted in the main node of the Config Management setup, you'll have to mount it to the main node)."}<br /></li><li>{"Execute the WSO2 update tool on the main node to update the product pack."}<br /></li><li>{"Using you Configuration Management Tool, transfer the updated pack to the other nodes."}<br /></li><li>{"Mount the shared directory on other nodes. At this point, the update is successful on all the deployment node."}<br /><ol></ol></li></ol></ul>
+<ul>{"Without the aid of a **Configuration Management Tool**:"}<br /><ol><li>{"In the deployment, first stop all product packs."}<br /></li><li>{"Unmount the shared directory (deployment/server) in all servers except in one server/instance."}<br /></li><li>{"Run the WSO2 Update tool to update the product pack with the latest changes (jar, war, and webapp changes)."}<br /></li><li>{"If there are conflicts, take any necessary steps to manually resolve them. [Refer to the Resolve Conflicts page](../../updates/resolve-conflicts/)"}<br /></li><li>{"This will apply all the updates sent for deployment/server directories from WSO2. "}<br /></li><li>{"Copy the updated pack to all other nodes replacing their existing product."}<br /></li><li>{"Mount the shared directory in all nodes and start servers. Now the whole deployment is updated."}</li></ol></ul>
 
 ### Is it mandatory to have a Configuration Management Tool configured or can we deploy Updates manually to tour environments? 
 It is not mandatory to have a Configuration Management Tool configured, but having a Configuration Management Tool makes the continuous updates process easy and aids configuration with less possibility of human errors.
@@ -263,6 +251,8 @@ Follow the steps described below to create an updated product zip that can be us
 
 5.Run the following command to re-zip the updated product pack.
 
-        zip -r [path_to_product_pack].zip [path_to_product_pack]
+```
+    zip -r [path_to_product_pack].zip [path_to_product_pack]
+```
 <br />
 6. You can use the zip file created in step 6 in the rest of the pipeline.
